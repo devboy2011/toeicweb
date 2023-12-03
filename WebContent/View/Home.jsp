@@ -103,74 +103,73 @@
 	  ==============================================-->
 	
 	
-	   		<div class="row feature-box">
-		      <div class="span12 cnt-title">
-		      	<h1>Chúng tôi cung cấp cho bạn các giao diện học và thi thân thiện với người dùng</h1> 
-		      	<span>(--Học thử, Làm bài tập, Thi thử--)</span>        
-		      </div>
-		
-		      <div class="span4">
-		        <img src="Template/Frontend/Image/guideline.png">
-		        <h2>Hướng dẫn phần từ vựng, ngữ pháp</h2>
-		        <p>Cung cấp các bài hướng dẫn sát với đề thi.</p>
-		        <a href="#" data-toggle="modal" data-target="#myModal">Chi tiết &rarr;</a>
-		      </div>
-		
-		      <div class="span4">
-		        <img src="Template/Frontend/Image/exercises.png">
-		        <h2>Bài tập phần nghe, đọc</h2>
-		        <p>Chúng tôi cung cấp các dạng bài tập có trong đề thi Toeic.</p>   
-		          <a href="" data-toggle="modal" data-target="#myModal1">Chi tiết &rarr;</a>    
-		      </div>
-		
-		      <div class="span4">
-		        <img src="Template/Frontend/Image/thitoeic.png">
-		        <h2>Đề thi thử</h2>
-		        <p>Chúng tôi cung cấp cho các bạn đề thi sát với thi thật.</p>
-		          <a href="Hienthidsdethi?pageid=1">Chi tiết &rarr;</a>
-		      </div>
-		  </div>
+	<div class="row feature-box">
+	      <div class="span12 cnt-title">
+	      	<h1>Chúng tôi cung cấp cho bạn các giao diện học và thi thân thiện với người dùng</h1> 
+	      	<span>(--Học thử, Làm bài tập, Thi thử--)</span>        
+      </div>
+	
+      <div class="span4">
+	        <img src="Template/Frontend/Image/guideline.png">
+	        <h2>Hướng dẫn phần từ vựng, ngữ pháp</h2>
+	        <p>Cung cấp các bài hướng dẫn sát với đề thi.</p>
+	        <a href="#" data-toggle="modal" data-target="#myModal">Chi tiết &rarr;</a>
+      </div>
+	
+      <div class="span4">
+	        <img src="Template/Frontend/Image/exercises.png">
+	        <h2>Bài tập phần nghe, đọc</h2>
+	        <p>Chúng tôi cung cấp các dạng bài tập có trong đề thi Toeic.</p>   
+	          <a href="" data-toggle="modal" data-target="#myModal1">Chi tiết &rarr;</a>    
+      </div>
+	
+      <div class="span4">
+	        <img src="Template/Frontend/Image/thitoeic.png">
+	        <h2>Đề thi thử</h2>
+	        <p>Chúng tôi cung cấp cho các bạn đề thi sát với thi thật.</p>
+	          <a href="Hienthidsdethi?pageid=1">Chi tiết &rarr;</a>
+      </div>
+  </div>
 	
 	<!-- /.Feature -->
 
   	<div class="hr-divider"></div>
 
-	<!-- Row View -->
-    <div class="row">
-        <div class="span6"><img src="Template/Frontend/img/responsive.png"></div>
+		<!-- Row View -->
+	    <div class="row">
+	        <div class="span6"><img src="Template/Frontend/img/responsive.png"></div>
+	
+	        <div class="span6">
+	          <img class="hidden-phone" src="Template/Frontend/img/icon4.png" alt="">
+	          <h1>Fully Responsive</h1>
+	            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	             <a href="#">Read More &rarr;</a>
+	        </div>
+	    </div>
+		<!-- /.Row View -->
+	</div>
 
-        <div class="span6">
-          <img class="hidden-phone" src="Template/Frontend/img/icon4.png" alt="">
-          <h1>Fully Responsive</h1>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-             <a href="#">Read More &rarr;</a>
-        </div>
-    </div>
-	<!-- /.Row View -->
-
-</div>
-
-		<!--Footer
-		==========================-->
-		<div id="size1">
-			<jsp:include page="Footer.jsp"/>
-		</div>
-		<!--/.Footer-->
-		
-		
-		<!-- start Modal -->
-		<div class="modal fade" id="myModal" role="dialog">
-		    
-			<div class="modal-dialog">
-
+	<!--Footer
+	==========================-->
+	<div id="size1">
+		<jsp:include page="Footer.jsp"/>
+	</div>
+	<!--/.Footer-->
+			
+			
+	<!-- start Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+	
 		    <!-- Modal content-->
 		    <div class="modal-content">
-		    	<div class="modal-header">
-		    		<button type="button" class="close" data-dismiss="modal">&times;</button>
-		    		<h4 class="modal-title">DANH SÁCH LOẠI BÀI HƯỚNG DẪN</h4>
-		    	</div>
-
-		        <div class="modal-body">
+			   	
+			   	<div class="modal-header">
+			   		<button type="button" class="close" data-dismiss="modal">&times;</button>
+			   		<h4 class="modal-title">DANH SÁCH LOẠI BÀI HƯỚNG DẪN</h4>
+			   	</div>
+		
+		       	<div class="modal-body">
 					<div class="media">
 						<a class="pull-left"><img src="Template/Frontend/Image/loaibtnghe.png" class="media-object" alt='' /></a>
 						<div class="media-body">
@@ -179,7 +178,7 @@
 							</h4> 					
 						</div>
 					</div>
-					
+				
 			        <div class="media">
 						<a class="pull-left"><img src="Template/Frontend/Image/loaibtdoc.png" class="media-object" alt='' /></a>
 						<div class="media-body">
@@ -188,55 +187,53 @@
 							</h4> 					
 						</div>
 					</div>
-		        </div>
-		        
-	        	<div class="modal-footer">
-		        	<button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
-		        </div>
- 
-		      </div>
-		      
-		    </div>
-		  </div>
-		  <!-- end modal -->
-		  
-		  <!-- start Modal làm bt -->
-		  <div class="modal fade" id="myModal1" role="dialog">
-		    <div class="modal-dialog">
-		    
-		    	<!-- Modal content-->
-		    	<div class="modal-content">
-		        	<div class="modal-header">
-		          		<button type="button" class="close" data-dismiss="modal">&times;</button>
-		          		<h4 class="modal-title">DANH SÁCH LOẠI BÀI TẬP</h4>
-		        	</div>
-		        	
-	        		<div class="modal-body">
-	         			<div class="media">
-							<a class="pull-left"><img src="Template/Frontend/Image/loaibtnghe.png" class="media-object" alt='' /></a>
-							<div class="media-body">
-								<h4>
-									<a href="Hienthidsbtnghe?pageid=1">Bài tập phần nghe</a>
-								</h4> 					
-							</div>
-						</div>
-			          	
- 						<div class="media">
-							<a class="pull-left"><img src="Template/Frontend/Image/loaibtdoc.png" class="media-object" alt='' /></a>
-							<div class="media-body">
-								<h4>
-									<a href="Hienthidsbtphandoc?pageid=1">Bài tập phần đọc</a>
-								</h4> 					
-							</div>
-						</div>
-		        	</div>
-		        	
-	        		<div class="modal-footer">
-		          		<button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
-		        	</div>
-		      </div>
-		    </div>
-		  </div>
-		  <!-- end modal -->
+		       	</div>
+		       
+		      	<div class="modal-footer">
+		       		<button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+		       	</div>
+	     </div>
+	   </div>
+	 </div>
+	 <!-- end modal -->
+	 
+	 <!-- start Modal làm bt -->
+	 <div class="modal fade" id="myModal1" role="dialog">
+	   <div class="modal-dialog">
+	   
+	   	<!-- Modal content-->
+	   	<div class="modal-content">
+	       	<div class="modal-header">
+	         		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	         		<h4 class="modal-title">DANH SÁCH LOẠI BÀI TẬP</h4>
+	       	</div>
+	       	
+      		<div class="modal-body">
+       			<div class="media">
+					<a class="pull-left"><img src="Template/Frontend/Image/loaibtnghe.png" class="media-object" alt='' /></a>
+					<div class="media-body">
+						<h4>
+							<a href="Hienthidsbtnghe?pageid=1">Bài tập phần nghe</a>
+						</h4> 					
+					</div>
+				</div>
+	          	
+				<div class="media">
+					<a class="pull-left"><img src="Template/Frontend/Image/loaibtdoc.png" class="media-object" alt='' /></a>
+					<div class="media-body">
+						<h4>
+							<a href="Hienthidsbtphandoc?pageid=1">Bài tập phần đọc</a>
+						</h4> 					
+					</div>
+				</div>
+	       	</div>
+	       	
+	      		<div class="modal-footer">
+	         		<button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+	       		</div>
+	     </div>
+	   </div>
+	 </div>
+	 <!-- end modal -->
 </body>
 </html>

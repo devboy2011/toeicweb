@@ -16,7 +16,7 @@
 	    	<div class="row">
 	        	
 	        	<!--LOGO-->
-	            <div class="span3"><a class="brand" href="Homeforward"><img src="Template/Frontend/img/logo.png"/></a></div>
+	            <div class="span3"><a class="brand" href="HomeForward"><img src="Template/Frontend/img/logo.png"/></a></div>
 	            <!-- /LOGO -->
 	
 	            <!-- MAIN NAVIGATION -->  
@@ -26,8 +26,8 @@
 	                   		<a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
 	                   		<div class="nav-collapse collapse navbar-responsive-collapse">
 	                    		<ul class="nav">
-	                    			<li><a href="Logincontroller">Đăng nhập</a></li>
-	                 				<li><a href="Registercontroller">Đăng Ký</a></li>
+	                    			<li><a href="LoginForward">Đăng nhập</a></li>
+	                 				<li><a href="RegisterController">Đăng Ký</a></li>
 	                    		</ul>
 	                  		</div>
 	                  	</div>
