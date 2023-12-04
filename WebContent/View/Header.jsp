@@ -27,7 +27,7 @@
 	                   		<div class="nav-collapse collapse navbar-responsive-collapse">
 	                    		<ul class="nav">
 	                    			<li><a href="LoginForward">Đăng nhập</a></li>
-	                 				<li><a href="RegisterController">Đăng Ký</a></li>
+	                 				<li><a href="RegisterForward">Đăng Ký</a></li>
 	                    		</ul>
 	                  		</div>
 	                  	</div>

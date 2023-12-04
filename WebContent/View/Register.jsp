@@ -32,7 +32,7 @@
 					}
 					else 
 					{
-						if (memberpass.length <= 6)
+						if (memberpass.length < 6)
 						{
 							document.getElementById("errorpass").innerHTML = "Độ dài pass >= 6";
 							return false;
@@ -73,7 +73,7 @@
 
 										<div class="space-6"></div>
 
-										<form name="myform" action="Registercontroller" method="POST" onsubmit="return Validate()">
+										<form name="myform" action="RegisterController" method="POST" onsubmit="return Validate()">
 											<fieldset>
 												<label class="block clearfix" style="color:red">
 													<%=request.getAttribute("msgregister")!=null?request.getAttribute("msgregister"):" "%>
