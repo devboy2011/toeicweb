@@ -46,7 +46,7 @@
 	 	<div class="container">
 	   		<div class="row">
 	        	<!--LOGO-->
-	            	<div class="span3"><a class="brand" href="Homeforward"><img src="Template/Frontend/img/logo.png"/></a></div>
+	            	<div class="span3"><a class="brand" href="HomeForward"><img src="Template/Frontend/img/logo.png"/></a></div>
 	            <!-- /LOGO -->
 	
 	            <!-- MAIN NAVIGATION -->  
@@ -57,7 +57,7 @@
 	                    		<div class="nav-collapse collapse navbar-responsive-collapse">
 	                    			<ul class="nav">
 	                                	<li><a>Wellcome: ${sessionuser}</a></li>
-	                        			<li><a href="Logoutcontroller">Thoát</a></li>
+	                        			<li><a href="LogoutController">Thoát</a></li>
 	                 				</ul>
 	                  			</div>
 		                  	</div>

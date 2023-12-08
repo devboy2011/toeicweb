@@ -42,7 +42,6 @@ public class RegisterController extends HttpServlet {
 		String name = request.getParameter("name");
 		String membername = request.getParameter("membername");
 		String memberpass = request.getParameter("memberpass");
-		int categorymemberid = 2;
 		
 		Member member = new Member();
 		member.setName(name);
