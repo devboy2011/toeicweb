@@ -2,3 +2,4 @@ eclipse.preferences.version=1
 encoding//src/Controller/LoginController.java=UTF-8
 encoding//src/Controller/LoginForward.java=UTF-8
 encoding//src/Controller/RegisterController.java=UTF-8
+encoding//src/DAO/GrammarGuidelineDAO.java=UTF-8

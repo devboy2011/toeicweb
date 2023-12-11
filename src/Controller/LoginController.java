@@ -66,7 +66,16 @@ public class LoginController extends HttpServlet {
 				String name = LoginDAO.GetName(request, conn, member);
 				session.setAttribute("sessionuser", name);
 				
-				RequestDispatcher rd = request.getRequestDispatcher("HomeForward");
+				RequestDispatcher rd = request.getRequestDispatcher("AdminForward");
+				rd.forward(request, response);
+			}
+			else {
+				HttpSession session = request.getSession();
+				
+				String name = LoginDAO.GetName(request, conn, member);
+				session.setAttribute("sessionuser", name);
+				
+				RequestDispatcher rd = request.getRequestDispatcher("Home.jsp");
 				rd.forward(request, response);
 			}
 		} else {
