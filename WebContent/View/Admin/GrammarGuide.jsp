@@ -103,7 +103,7 @@
 													</a></td>
 
 													<td class="center"><a class="green"
-														href="Grammarguidelinecontentfoward?id=${list.grammarguidelineid}">
+														href="GrammarGuidelineContentForward?id=${list.grammarguidelineid}">
 															<i class="ace-icon fa fa-pencil bigger-130"></i>
 													</a></td>
 													<td class="center">
@@ -133,21 +133,21 @@
 												<li class="active"><a href="#">Prev</a></li>
 
 												<li><a
-													href="Listgrammarguidelinemanage?pageid=${numberpage+1}">Next</a></li>
+													href="GrammarGuide?pageid=${numberpage+1}">Next</a></li>
 											</c:if>
 											<c:if test="${numberpage == maxpageid}">
 												<li><a
-													href="Listgrammarguidelinemanage?pageid=${numberpage-1}">Prev</a></li>
+													href="GrammarGuide?pageid=${numberpage-1}">Prev</a></li>
 
 												<li class="active"><a href="#">Next</a></li>
 											</c:if>
 
 											<c:if test="${numberpage > 1 && numberpage < maxpageid}">
 												<li><a
-													href="Listgrammarguidelinemanage?pageid=${numberpage-1}">Prev</a></li>
+													href="GrammarGuide?pageid=${numberpage-1}">Prev</a></li>
 
 												<li><a
-													href="Listgrammarguidelinemanage?pageid=${numberpage+1}">Next</a></li>
+													href="GrammarGuide?pageid=${numberpage+1}">Next</a></li>
 											</c:if>
 										</ul>
 									</div>
@@ -189,7 +189,7 @@
 	<div class="modal fade" id="myModal" role="dialog">
 		<div class="modal-dialog">
 
-			<form action="Insertgrammarguidelinename" method="POST">
+			<form action="InsertGrammarGuidelineName" method="POST">
 				<!-- Modal content-->
 				<div class="modal-content">
 					<div class="modal-header">

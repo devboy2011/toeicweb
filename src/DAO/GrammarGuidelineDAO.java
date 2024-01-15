@@ -69,7 +69,7 @@ public class GrammarGuidelineDAO
 		return list;
 	}
 	
-	//dem bang do co bao nhieu hang
+	// Get number of grammar guidelines
 	public static int Countrow(Connection conn)
 	{
 		int count = 0;
@@ -94,7 +94,7 @@ public class GrammarGuidelineDAO
 		return count;
 	}
 	
-	//them ten bai huong dan vao csdl
+	// Add new Grammar Guideline into DB
 	public static boolean InsertName(HttpServletRequest request, Connection conn, GrammarGuideline grammarguideline)
 	{
 		PreparedStatement ptmt = null;
@@ -126,8 +126,6 @@ public class GrammarGuidelineDAO
 		
 		return false;	
 	}
-	
-	//ham them file anh cua cac de thi trong phan huong dan hoc ngu phap
 	
 	public static String UploadImage(Connection conn, HttpServletRequest request,HttpServletResponse response,int grammarguidelineid) 
 			throws ServletException, IOException 
@@ -178,19 +176,16 @@ public class GrammarGuidelineDAO
 			    {
 			    	 String fileName = item.getName();
 			    	 
-			    	 //pathFile: vị trí mà chúng ta muốn upload file vào
-			    	 //gửi cho server
-			    	 
+			    	 //pathFile: vị trí mà chúng ta muốn upload file vào gửi cho server
 			    	String pathFile = Address + File.separator + fileName;
-			    	 
 			    	File uploadedFile = new File(pathFile);
 			    	
-			    	
+			    	// check whether file have existed 
 			    	boolean kt = uploadedFile.exists();
 			    	 
 			    	try 
 			    	{
-			    		if (kt == true)	{ test = "file tồn tại. Yêu cầu chọn file khác"; }
+			    		if (kt == true)	{ test = "File đã tồn tại. Yêu cầu chọn file khác"; }
 			    		else
 			    		{		    			
 			    			item.write(uploadedFile);
@@ -218,7 +213,7 @@ public class GrammarGuidelineDAO
 		return test;
 	}
 	
-	public static int RetrieveGrammarGuidelineById(HttpServletRequest request, 
+	public static int GetGrammarGuidelineById(HttpServletRequest request, 
 			Connection conn, GrammarGuideline grammarguideline)
 	{
 		int grammarguidelineid = 0;

@@ -70,7 +70,7 @@
 										<div class="widget-box widget-color-blue">
 											<div class="widget-header widget-header-small">  </div>
 											
-											<form action="Grammarguidelinecontentcontroller?grammarguidelineid=<%=request.getAttribute("grammarguidelineid")%>" method="POST">
+											<form action="GrammarGuidelineContentController?grammarguidelineid=<%=request.getAttribute("grammarguidelineid")%>" method="POST">
 												<div class="widget-body">
 													<div class="widget-main no-padding">
 														<textarea name="content" data-provide="markdown" data-iconlibrary="fa" rows="10" data-hidden-buttons="Image">
@@ -79,8 +79,6 @@
 													</div>
 	
 													<div class="widget-toolbox padding-4 clearfix">
-														
-	
 														<div class="btn-group pull-right">
 															<button class="btn btn-sm btn-purple" type="submit">
 																<i class="ace-icon fa fa-floppy-o bigger-125"></i>
