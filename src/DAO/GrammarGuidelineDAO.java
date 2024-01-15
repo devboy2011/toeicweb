@@ -24,11 +24,12 @@ import BEAN.GrammarGuideline;
 public class GrammarGuidelineDAO 
 {
 	
-	public static List<GrammarGuideline> Displaysgrammarguidelinemanage (HttpServletRequest request,int start, int count,Connection conn)
+	public static List<GrammarGuideline> DisplayManage (HttpServletRequest request,int start, int count,Connection conn)
 	{
 		List<GrammarGuideline> list = new ArrayList<GrammarGuideline>();
 		
-		String sql = "select * from grammarguideline limit "+(start-1)+", "+count+"";
+		//String sql = "select * from grammarguideline limit "+(start-1)+", "+count+"";
+		String sql = "select * from grammarguideline";
 		try 
 		{
 			PreparedStatement ptmt = conn.prepareStatement(sql);
@@ -94,7 +95,7 @@ public class GrammarGuidelineDAO
 	}
 	
 	//them ten bai huong dan vao csdl
-	public static boolean Insertgrammarguidelinename(HttpServletRequest request, Connection conn, GrammarGuideline grammarguideline)
+	public static boolean InsertName(HttpServletRequest request, Connection conn, GrammarGuideline grammarguideline)
 	{
 		PreparedStatement ptmt = null;
 		
@@ -128,7 +129,7 @@ public class GrammarGuidelineDAO
 	
 	//ham them file anh cua cac de thi trong phan huong dan hoc ngu phap
 	
-	public static String Uploadimagegrammerguideline(Connection conn, HttpServletRequest request,HttpServletResponse response,int grammarguidelineid) 
+	public static String UploadImage(Connection conn, HttpServletRequest request,HttpServletResponse response,int grammarguidelineid) 
 			throws ServletException, IOException 
 	{
 		String test = "";
@@ -150,21 +151,16 @@ public class GrammarGuidelineDAO
 		
 		DiskFileItemFactory factory = new DiskFileItemFactory();
 		
-		
 		// Set factory constraints
 		factory.setSizeThreshold(MaxMemorySize);
 
 		factory.setRepository(new File(System.getProperty("java.io.tmpdir")));
 		
-		
 		// Create a new file upload handler
 		ServletFileUpload upload = new ServletFileUpload(factory);
 		
-		
 		// Set overall request size constraint
 		upload.setSizeMax(MaxRequestSize);
-		
-		
 		
 		try 
 		{
@@ -194,25 +190,16 @@ public class GrammarGuidelineDAO
 			    	 
 			    	try 
 			    	{
-			    		
-			    		if (kt == true)
-			    		{
-			    					    
-			    			test = "file tồn tại. Yêu cầu chọn file khác";
-			    		}
+			    		if (kt == true)	{ test = "file tồn tại. Yêu cầu chọn file khác"; }
 			    		else
 			    		{		    			
 			    			item.write(uploadedFile);
 			    			GrammarGuidelineDAO.InsertGrammarImage(request, conn,fileName, grammarguidelineid);
 			    			test="Success";
 			    		}
-						
-						
 					} 
 			    	catch (Exception e) 
 			    	{
-
-			    		
 			    		test = e.getMessage();
 					}   	 
 			    } 

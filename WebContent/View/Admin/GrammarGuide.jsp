@@ -53,7 +53,7 @@
 				<div class="breadcrumbs ace-save-state" id="breadcrumbs">
 					<ul class="breadcrumb">
 						<li><i class="ace-icon fa fa-home home-icon"></i> <a
-							href="Adminforward">Trang chủ</a></li>
+							href="AdminForward">Trang chủ</a></li>
 
 						<li><a href="#">Quản lý phần hướng dẫn ngữ pháp</a></li>
 						<li class="active">Thêm danh sách bài hướng dẫn ngữ pháp</li>
@@ -160,13 +160,8 @@
 										class="btn btn-white btn-warning btn-bold" data-toggle="modal"
 										data-target="#myModal">Thêm đề bài hướng dẫn học ngữ
 										pháp</button>
-
 								</div>
-
 							</div>
-
-
-
 						</div>
 					</div>
 				</div>
@@ -190,9 +185,6 @@
 	</div>
 	<!-- /.main-container -->
 
-
-
-
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" role="dialog">
 		<div class="modal-dialog">
@@ -211,27 +203,24 @@
 
 								<div class="col-sm-9">
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right"
-											for="form-field-1">Nhập tên</label>
+										<label class="col-sm-3 control-label no-padding-right"	for="form-field-1">Nhập tên</label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1-1"
+											<input 
+												type="text" 
+												id="form-field-1-1"
 												placeholder="Tên bài hướng dẫn ngữ pháp"
 												class="form-control" name="grammarname" />
 										</div>
 									</div>
-
 								</div>
-
 							</div>
 						</div>
-
 					</div>
 					<br />
 					<div class="modal-footer">
 						<button class="btn btn-info" type="submit">
-							<i class="ace-icon fa fa-check bigger-110"></i> Thêm tên bài
-							hướng dẫn
+							<i class="ace-icon fa fa-check bigger-110"></i> Thêm tên bài hướng dẫn
 						</button>
 					</div>
 				</div>

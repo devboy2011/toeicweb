@@ -46,7 +46,7 @@
 			</a> <b class="arrow"></b>
 
 				<ul class="submenu">
-					<li class=""><a href="GrammarGuideForward?pageid=1">
+					<li class=""><a href="GrammarGuideForward?pageid=1&count=5">
 							<i class="menu-icon fa fa-caret-right"></i> Ngữ pháp
 					</a> <b class="arrow"></b></li>
 

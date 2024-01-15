@@ -13,7 +13,6 @@ import javax.servlet.http.HttpSession;
 
 import BEAN.Member;
 import DAO.LoginDAO;
-import DAO.RegisterDAO;
 import DB.DBConnection;
 
 /**
@@ -42,7 +41,9 @@ public class LoginController extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException 
+	{
 		if (request.getCharacterEncoding() == null) {
 			request.setCharacterEncoding("UTF-8");
 		}
